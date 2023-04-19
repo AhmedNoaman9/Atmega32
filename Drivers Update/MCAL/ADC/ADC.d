@@ -1,0 +1,3 @@
+MCAL/ADC/ADC.o: MCAL/ADC/ADC.c LIB/Bit_math.h LIB/Std_types.h \
+ MCAL/ADC/ADC.h
+	avr-gcc -c -I./HAL/LED -I./HAL/SSEG -I./HAL/SWITCH -I./LIB -I./MCAL/ADC -I./MCAL/DIO -I./MCAL/EXTI -I./MCAL/GIE -w -std=gnu99 -mmcu=atmega32 -B "C:\Program Files (x86)\Microchip Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums MCAL/ADC/ADC.c -o MCAL/ADC/ADC.o

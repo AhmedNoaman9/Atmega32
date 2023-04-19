@@ -1,0 +1,2 @@
+HAL/SWITCH/SWITCH_Cfg.o: HAL/SWITCH/SWITCH_Cfg.c
+	avr-gcc -c -I./HAL/LED -I./HAL/SSEG -I./HAL/SWITCH -I./LIB -I./MCAL/ADC -I./MCAL/DIO -I./MCAL/EXTI -I./MCAL/GIE -w -std=gnu99 -mmcu=atmega32 -B "C:\Program Files (x86)\Microchip Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums HAL/SWITCH/SWITCH_Cfg.c -o HAL/SWITCH/SWITCH_Cfg.o
